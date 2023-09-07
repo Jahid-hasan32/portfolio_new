@@ -1,0 +1,145 @@
+#blog {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#round_blog {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%);
+    width: 5px;
+    height: 5px;
+    box-shadow: var(--shadow);
+    background: var(--primary--color);
+
+}
+
+#blog::before{
+    content: '';
+    width: 2px;
+    margin-top: .4rem;
+    height:12rem;
+    position: absolute;
+    transform: translate(-50%);
+    left: 2%;
+    background: var(--primary--color);
+}
+#blog::after{
+    content: '';
+    width: 2px;
+    height: 12rem;
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    transform: translate(-50%);
+    background: var(--primary--color);
+}
+
+
+.blog_txt {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.blog_txt > p {
+    margin-top: 1rem;
+}
+
+/* blog cards desgin */
+.blog_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.blog_card{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid var( --primary--color);
+    padding: .8rem;
+    border-radius: 10px;
+}
+
+.blog_sm_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: .3rem 0;
+}
+
+.blog_card > img {
+    width: 16rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.blog_card > p > a{
+    text-decoration: underline;
+    color: var(--bg--color);
+}
+
+.blog_card > p > a:hover{
+    color: var(--bg--color--alt);
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN  -> mobile devices*/ 
+/* ************************************************* */
+
+@media screen and (max-width:500px){
+    .blog_wrapper{
+        flex-direction: column;
+    }
+
+    #round_blog {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translate(-50%);
+        width: 5px;
+        height: 5px;
+        box-shadow: var(--shadow);
+        background: var(--primary--color);
+    
+    }
+    
+    #blog::before{
+        content: '';
+        width: 2px;
+        margin-top: .4rem;
+        height:30rem;
+        position: absolute;
+        transform: translate(-50%);
+        left: 2%;
+        background: var(--primary--color);
+    }
+    #blog::after{
+        content: '';
+        width: 2px;
+        height: 30rem;
+        position: absolute;
+        bottom: 0%;
+        left: 2%;
+        transform: translate(-50%);
+        background: var(--primary--color);
+    }
+    
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN -> tablet */
+/* ************************************************* */
+
+@media screen and (max-width:900px) and (min-width:501px) {
+
+}
+

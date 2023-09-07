@@ -1,0 +1,356 @@
+#home{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+/* ************************************************* */
+/* NAVBAR DESIGN */
+/* ************************************************* */
+nav {
+    padding-inline: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 95.5vw;
+    font-family: voyage;
+    font-weight:900;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--border--color);
+}
+.logo{
+    font-size: var(--h5--font-size);
+}
+
+.nav_content > .btn  {
+    padding:0vw .8vw;
+}
+
+/* ************************************************* */
+/* HERO SECTION DESIGN */
+/* ************************************************* */
+
+.hero__container{
+    height: calc(100vh - 10% );
+    width: 96.5vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.round{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width: 5px;
+    height: 5px;
+    box-shadow: var(--shadow);
+    background: var(--primary--color);
+}
+.hero__container::before{
+    content: '';
+    width: 2px;
+    margin-top: .4rem;
+    height: 12.7rem;
+    position: absolute;
+    transform: translate(-50%);
+    background: var(--primary--color);
+}
+.hero__container::after{
+    content: '';
+    width: 2px;
+    height: 12rem;
+    position: absolute;
+    bottom: 3%;
+    transform: translate(-50%);
+    background: var(--primary--color);
+}
+
+.hero_content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    flex: 1;
+}
+.home_txt h1{
+    line-height: 12vh;
+    font-size: var(--h1--font-size);
+    -webkit-text-stroke: 1.2px;
+    -webkit-text-stroke-color: var(--primary--color);
+}
+.home_txt h1 span{
+    color: var(--primary--color);
+}
+.home_desc {
+    margin-top: 10vh;
+    line-height: 3.5vh;
+}
+
+.social_links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3vh;
+}
+
+.social_icon{
+    font-size: 2vw;
+    border-radius: 50%;
+    margin-top: 4vh;
+    transition: var(--transition);
+    cursor: pointer;
+    color: var( --title--color);
+}
+
+.social_icon:hover{
+    color: var(--primary--color);
+}
+
+.home_link{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    margin-top: 4vh;
+}
+.btn_home::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -32%;
+    width: 2.5rem;
+    height: 2px;
+    background: var(--primary--color);
+}
+
+.right{
+    flex: 1;
+    position: relative;
+}
+
+.highlight{
+    border: 2px solid var(--primary--color);
+    width: fit-content;
+    padding: .6rem;
+    border-radius: 50px;
+    box-shadow: var(--shadow);
+    font-family: Gumela;
+}
+.highlight span{
+    color: var(--primary--color);
+}
+.highlighttwo {
+    position: absolute;
+    top: 17%;
+    right: 20%;
+}
+
+.img_banner{
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+    z-index: -1;
+    top: 30%;
+    /* left: 20%; */
+    border-radius: 50% 100%;
+    background: var(--primary--color);
+}
+
+.shape{
+    width: 5rem;
+}
+.shapeone{
+    position: absolute;
+}
+.shapethree{
+    position: absolute;
+    right: 10%;
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN  -> mobile devices*/ 
+/* ************************************************* */
+
+@media screen and (max-width:500px) {
+    #home{
+        height: 145vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .hero_content{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav{
+        height: 5%;
+    }
+    .logo{
+        font-size: var(--small--font-size);
+    }
+
+    .nav_content > .btn  {
+        padding:0 .5vw;
+        font-size: 12px;
+    }
+
+    .nav_content > .btn > a{
+        padding: .2rem;
+    }
+    
+    /* left side */
+    .left{
+        margin-top: 13rem;
+    }
+    .home_txt h1{
+        line-height: 6vh;
+        font-size: var(--h4--font-size);
+        -webkit-text-stroke: .5px;
+        -webkit-text-stroke-color: var(--primary--color);
+    }
+    .home_desc{
+        font-size: 14px;
+        margin-top: 4vh;
+    }
+
+    .social_links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 3vh;
+    }
+    
+    .social_icon{
+        font-size: 4vw;
+        margin-top: 0vh;
+    }
+
+    .home_link{
+        display: flex;
+        justify-content: space-between;
+        gap: 5vw;
+        align-items: center;
+        margin-top: 4vh;
+    }
+    .btn_home::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -46%;
+        width: 3rem;
+        height: 2px;
+        background: var(--primary--color);
+    }
+    .home_link .btn {
+        padding: .3rem;
+    }
+
+    /* right side */
+    .right{
+        margin-top: 1.5rem;
+    }
+    
+    .highlight{
+        border: 2px solid var(--primary--color);
+        width: fit-content;
+        padding: .4rem;
+        border-radius: 50px;
+        font-size: 13px;
+    }
+    .highlight span{
+        color: var(--primary--color);
+    }
+
+    .img_banner{
+        position: absolute;
+        width: 45vw;
+        height: 55vh;
+        z-index: -1;
+        top: 27%;
+        left: 20%;
+        rotate: -45deg;
+        border-radius: 50% 100%;
+        background: var(--primary--color);
+    }
+    
+    .shape{
+        width: 3rem;
+    }
+
+    .shapethree{
+        position: absolute;
+        right: 10%;
+    }
+    
+    .round{
+        position: absolute;
+        top: 95%;
+        height: 5px;
+        left: 1%;
+
+    }
+    .hero__container::before{
+        content: '';
+        width: 2px;
+        margin-top: .4rem;
+        height: 18.7rem;
+        left: 1%;
+
+        position: absolute;
+    }
+    .hero__container::after{
+        content: '';
+        height: 30rem;
+        left: 1%;
+        position: absolute;
+        top: 100%;
+    }
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN -> tablet */
+/* ************************************************* */
+
+@media screen and (max-width:900px) and (min-width:501px) {
+    .highlight{
+        border: 2px solid var(--primary--color);
+        width: fit-content;
+        padding: .4rem;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+    .round{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        width: 5px;
+        height: 5px;
+        background: var(--primary--color);
+    }
+    .hero__container::before{
+        content: '';
+        width: 2px;
+        margin-top: .4rem;
+        height: 10rem;
+        position: absolute;
+        transform: translate(-50%);
+        background: var(--primary--color);
+    }
+    .hero__container::after{
+        content: '';
+        width: 2px;
+        height: 9.3rem;
+        position: absolute;
+        bottom: 3%;
+        transform: translate(-50%);
+        background: var(--primary--color);
+    }
+    
+}

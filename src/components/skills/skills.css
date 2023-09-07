@@ -1,0 +1,154 @@
+.skills{
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.round-skills{
+    position: absolute;
+    top: 50%;
+    transform: translate(-4%);
+    right: 4%;
+    width: 5px;
+    height: 5px;
+    box-shadow: var(--shadow);
+    background: var(--primary--color);
+}
+
+.skills::before{
+    content: '';
+    width: 2px;
+    margin-top: .4rem;
+    height: 12.7rem;
+    right: 4%;
+    position: absolute;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+.skills::after{
+    content: '';
+    width: 2px;
+    height: 12rem;
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+
+.shapeone_skills{
+    position: absolute;
+    width: 3rem;
+    top: 3%;
+    left: 4%;
+}
+
+.skills_txt {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.skills_txt > p{
+    margin-top: 1rem;
+}
+
+.skills_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box1 {
+    box-shadow: var(--shadow);
+}
+.box1 h6 {
+    font-size: 17px;
+    font-family: voyage;
+}
+
+.box1 h4 {
+    color: aliceblue;
+}
+.box1 img {
+    width: 4rem;
+    rotate: -60deg;
+    margin-top: 1rem;
+    border: 1px solid var(--container--color);
+
+}
+.inner_txt {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: .8rem;
+}
+.inner_txt  h4{
+    margin-bottom: .5rem;
+    font-family: Gumela;
+}
+.box1  .btn{
+    margin-left: 5rem;
+}
+.swiper-pagination-bullet-active{
+    background: var(--primary--color);
+}
+.swiper-wrapper{
+    margin-bottom: 3rem;
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN  -> mobile devices*/ 
+/* ************************************************* */
+
+@media screen and (max-width:500px) {
+
+
+
+    .skills::before{
+        content: '';
+        width: 2px;
+        margin-top: .4rem;
+        height: 12rem;
+        right: 4%;
+        position: absolute;
+        transform: translate(-46%);
+        background: var(--primary--color);
+    }
+    .skills::after{
+        content: '';
+        width: 2px;
+        height: 11.2rem;
+        position: absolute;
+        bottom: 3%;
+        right: 4%;
+        transform: translate(-46%);
+        background: var(--primary--color);
+    }
+    
+    .swiper-wrapper{
+        margin-bottom: 3rem;
+    }
+    
+    .box1 h6 {
+        font-size: 16px;
+        font-family: voyage;
+        padding-left: .8rem;
+    }
+    .inner_txt {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: .8rem;
+    }
+}
+
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN -> tablet */
+/* ************************************************* */
+
+@media screen and (max-width:900px) and (min-width:501px) { 
+
+    
+}

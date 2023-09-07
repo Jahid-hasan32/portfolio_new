@@ -1,0 +1,169 @@
+#testimonial{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+    margin: 2rem 0 ;
+}
+#round_testimonial{
+    position: absolute;
+    top: 50%;
+    transform: translate(-4%);
+    right: 4%;
+    width: 5px;
+    height: 5px;
+    box-shadow: var(--shadow);
+    background: var(--primary--color);
+}
+
+#testimonial::before{
+    content: '';
+    width: 2px;
+    margin-top: .4rem;
+    height: 12rem;
+    right: 4%;
+    position: absolute;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+#testimonial::after{
+    content: '';
+    width: 2px;
+    height: 12rem;
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+
+
+.testimonial_txt {
+    text-align: center;
+    margin: 2rem;
+}
+
+.testimonial_txt > p {
+    margin-top: 1rem;
+}
+
+/* testimonial container */
+
+.testimonial_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+.testimonial_container > .feedback h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary--color);
+}
+.testimonial_container > .feedback p {
+    letter-spacing: 1px;
+}
+
+.swiper_container{
+    flex: 1;
+    width: 100%;
+}
+
+.testimonial_card{
+    box-shadow: rgb(6, 8, 10) 5px 5px 15px 1px;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    border: 1px solid var(--primary--color);
+}
+.testimonial_card > img{
+    width: 4rem;
+    height: 4rem;
+    padding: .3rem;
+    margin: .5rem auto;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid var(--primary--color);
+}
+
+.testimonial_card > q {
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.testimonial_card > p{
+    letter-spacing: 4px;
+    margin: .3rem 0;
+    color: var( --primary--color);
+    text-transform: uppercase;
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN  -> mobile devices*/ 
+/* ************************************************* */
+
+@media screen and (max-width:500px){
+
+    #round_testimonial{
+        position: absolute;
+        top: 50%;
+        transform: translate(-4%);
+        right: 4%;
+        width: 5px;
+        height: 5px;
+        box-shadow: var(--shadow);
+        background: var(--primary--color);
+    }
+    
+    #testimonial::before{
+        content: '';
+        width: 2px;
+        margin-top: .4rem;
+        height: 19rem;
+        right: 4%;
+        position: absolute;
+        transform: translate(-46%);
+        background: var(--primary--color);
+    }
+    #testimonial::after{
+        content: '';
+        width: 2px;
+        height: 19rem;
+        position: absolute;
+        bottom: 0%;
+        right: 4%;
+        transform: translate(-46%);
+        background: var(--primary--color);
+    }
+
+    .testimonial_container {
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .testimonial_card{
+        box-shadow: rgb(6, 8, 10) 5px 5px 15px 1px;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 90% !important;
+        border: 1px solid var(--primary--color);
+    }
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN -> tablet */
+/* ************************************************* */
+
+@media screen and (max-width:900px) and (min-width:501px) {
+    .testimonial_container {
+        gap: 3rem;
+
+    }
+    .testimonial_card{
+        box-shadow: rgb(6, 8, 10) 5px 5px 15px 1px;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 80% !important;
+        border: 1px solid var(--primary--color);
+    }
+}

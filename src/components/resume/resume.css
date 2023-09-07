@@ -1,0 +1,116 @@
+#resume{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.round_accor{
+    position: absolute;
+    top: 50%;
+    transform: translate(-46%);
+    left: 4%;
+    width: 5px;
+    height: 5px;
+    box-shadow: var(--shadow);
+    background: var(--primary--color);
+}
+
+#resume::before{
+    content: '';
+    width: 2px;
+    margin-top: .4rem;
+    height: 30vh;
+    left: 4%;
+    position: absolute;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+#resume::after{
+    content: '';
+    width: 2px;
+    height: 30vh;
+    position: absolute;
+    bottom: 0%;
+    left: 4%;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+
+
+.resume_txt{
+    text-align: center;
+    margin: 2rem;
+}
+.resume_txt > h1 {
+    margin-bottom: 1rem;
+}
+
+.resume_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.title_container{
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary--color);
+    padding: .8rem;
+    border-radius: 10px;
+    margin-top: .4rem;
+}
+
+.accor_text{
+    text-align: justify;
+    padding: .3rem;
+}
+
+
+.handle_btn:hover{
+    cursor: pointer;
+}
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN  -> mobile devices*/ 
+/* ************************************************* */
+
+@media screen and (max-width:500px) {
+    .resume_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    
+    
+#resume::before{
+    content: '';
+    width: 2px;
+    margin-top: .4rem;
+    height: 65vh;
+    left: 4%;
+    position: absolute;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}
+#resume::after{
+    content: '';
+    width: 2px;
+    height: 65vh;
+    position: absolute;
+    bottom: 0%;
+    left: 4%;
+    transform: translate(-46%);
+    background: var(--primary--color);
+}}
+    
+    
+    /* ************************************************* */
+    /* RESPONSIVE DESGIN -> tablet */
+    /* ************************************************* */
+    
+    @media screen and (max-width:900px) and (min-width:501px) { 
+    
+        
+    }
+    

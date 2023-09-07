@@ -1,0 +1,131 @@
+#contact{
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+
+}
+
+
+.contact_txt {
+    text-align: center;
+    margin: 2rem;
+}
+.contact_txt > p {
+    margin-top: 1rem;
+}
+
+.contact_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    flex: 1;
+}
+.content_form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.round_div{
+    border: 2px solid var(--primary--color);
+    padding: .3rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+.form_txt > .text_ch{
+    font-size: 20px;
+}
+.form_txt p {
+    font-size: 15px;
+}
+
+.right{
+    flex: 1;
+}
+
+.form_group input{
+    border: 1px solid var(--primary--color);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.form_group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_group label{
+    margin-top: .5rem;
+    font-family: Gumela;
+    margin-bottom: .3rem;
+}
+
+.form_group textarea {
+    border: 1px solid var(--primary--color);
+    height: 5rem;
+    border-radius: 5px;
+    padding: .5rem;
+    
+}
+ .form > button{
+    margin-top: 1rem;
+    transform: translateX(250%);
+ }
+
+footer{
+    padding-inline: 2%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid var(--primary--color);
+    margin-top: 2rem;
+}
+footer > .social_links > a{
+    color: whitesmoke;
+    transition: var(--transition);
+}
+footer > .social_links > .social_icon:hover{
+    color: var(--primary--color);
+}
+
+.footer_txt > p > span{
+    font-size: 25px;
+}
+/* ************************************************* */
+/* RESPONSIVE DESGIN  -> mobile devices*/ 
+/* ************************************************* */
+
+@media screen and (max-width:500px) {
+
+    .contact_container{
+        display: flex;
+        flex-direction: column;
+        margin-top: -13rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        border-top: 2px solid var(--primary--color);
+    }
+
+    footer > .social_links > a{
+        margin-left: 1.5rem;
+    }
+}
+
+
+/* ************************************************* */
+/* RESPONSIVE DESGIN -> tablet */
+/* ************************************************* */
+
+@media screen and (max-width:900px) and (min-width:501px) { 
+
+    
+}
