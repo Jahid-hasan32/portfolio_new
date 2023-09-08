@@ -14,7 +14,7 @@ export const Skills = () => {
 
     const [data, setData] = useState([''])
     useEffect(() => {
-        const apiUrl = 'http://127.0.0.1:8000/services/';
+        const apiUrl = 'https://jahidhasan32.pythonanywhere.com/services/';
         axios.get(apiUrl)
             .then(response => {
                 setData(response.data);

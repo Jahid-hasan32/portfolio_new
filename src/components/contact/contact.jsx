@@ -55,7 +55,7 @@ export const Contact = () => {
       e.preventDefault();
   
       // Send the form data to the Django API using Axios
-      axios.post('http://127.0.0.1:8000/form/', formData)
+      axios.post('https://jahidhasan32.pythonanywhere.com/form/', formData)
         .then((response) => {
           // Handle successful response (e.g., show a success message)
         })
