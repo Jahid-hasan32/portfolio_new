@@ -17,8 +17,9 @@ export const Skills = () => {
         const apiUrl = 'https://jahidhasan32.pythonanywhere.com/services/';
         axios.get(apiUrl)
             .then(response => {
-                setData(response.data);
                 // console.log(response);
+                console.log('hello world. how are you');
+                setData(response.data);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -61,19 +62,65 @@ export const Skills = () => {
 
                         className="container skills_container">
 
-                        {data.map(item => (
-                            <SwiperSlide  key={item.pk}>
-                                <div className="box1" key={item.pk}>
-                                    <h6>{item.main_title}</h6>
+                            <SwiperSlide  >
+                                <div className="box1" >
+                                    <h6>CSS Frameworks</h6>
                                     <div className="inner_txt">
-                                        <h4>{item.sub_title}</h4>
-                                        <p>{item.text}</p>
+                                        <h4>Bootstrap5 - Tailwind css</h4>
+                                        <p>Bootstrap5 & Tailwind css are most popular CSS framework. these used to repetedly design and creating front end parts of a web app.</p>
                                         <img src={ShapeOne} alt="shape img" />
                                         <button className='btn'>Know More</button>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                        ))}
+
+                            <SwiperSlide  >
+                                <div className="box1" >
+                                    <h6>Efficiency</h6>
+                                    <div className="inner_txt">
+                                        <h4>Docker</h4>
+                                        <p>Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.</p>
+                                        <img src={ShapeOne} alt="shape img" />
+                                        <button className='btn'>Know More</button>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide  >
+                                <div className="box1" >
+                                    <h6>Web Development</h6>
+                                    <div className="inner_txt">
+                                        <h4>Python - Django</h4>
+                                        <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. it's could be your best choice to development backend.</p>
+                                        <img src={ShapeOne} alt="shape img" />
+                                        <button className='btn'>Know More</button>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide  >
+                                <div className="box1" >
+                                    <h6>API Building</h6>
+                                    <div className="inner_txt">
+                                        <h4>Django Rest API</h4>
+                                        <p>DRF is a powerful toolkit for building Web APIs in Django. It provides a flexible way to create APIs by serializing Django models into JSON or other content types.</p>
+                                        <img src={ShapeOne} alt="shape img" />
+                                        <button className='btn'>Know More</button>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide  >
+                                <div className="box1" >
+                                    <h6>Web Designe</h6>
+                                    <div className="inner_txt">
+                                        <h4>HTML CSS & React JS</h4>
+                                        <p>we offered HTML for markuping Web Pages and  CSS and most popular Java Script frontend library 'React JS' to design most interactive web applications.</p>
+                                        <img src={ShapeOne} alt="shape img" />
+                                        <button className='btn'>Know More</button>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
 
                     </Swiper>
                 </div>
